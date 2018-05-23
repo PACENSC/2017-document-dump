@@ -1,0 +1,49 @@
+---
+geometry: margin=.4in
+header-includes: \usepackage{tabularx} \usepackage{float} \usepackage{graphicx,colortbl,xcolor} \usepackage{mathptmx}
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+bold <- function(x) {return(paste0("\\textbf{",x,"}"))}
+library(stringr)
+library(tidyr)
+library(knitr)# ; library(kableExtra)
+```
+
+\begin{center}
+{\huge \textbf{Packet 12 Reminders}}
+\end{center}
+
+# Information for Tier I, II rooms
+## Information for teams (read these out to the teams)
+- Round 12 is the final round of Saturday evenings's playoff phase. 
+- Send one representative (and one representative only) to your playoff bracket's Bracket Captain (listed under your playoff bracket's  schedule)
+- Bracket captains will notify the teams whether they are involved in a tiebreaker to determine their superplayoff bracket or if they are done for the day. **All tiebreakers to determine superplayoff seeds will take place on Saturday night**
+- Superplayoff brackets will be posted to the PACE website and the HSQuizbowl forums about 1 hour after the conclusion of the final tiebreakers.
+- Teams should verify their schedule and email Gaurav Kandlikar at tournament.director@pace-nsc.org with any discrepencies.
+
+## Information for moderators
+- Note that you may be asked by your bracket captain or control room to read for tiebreaker games for teams in your bracket if needed.
+- **If you are a solo reader**: take your scoresheet from Round 12 immediately to your control room; then wait outside your bracket captain's room. 
+- **If your room has a reader and a scorekeeper**, send the scorekeeper immediately to your control room; the reader should wait outside the bracket captain's room
+- After you are done reading tiebreakers (or confirm with your bracket captain that you are not needed for tiebreakers), you are done for the day
+- Leave the buzzer in your room set up - don't change anything!
+- Report to your Sunday control room by 8AM.
+
+# Information for Tier III, IV rooms
+## Information for teams
+
+- Round 12 is the final round of Saturday evenings's playoff phase. 
+- At the end of this round, tell your moderator your Win-Loss record and a contact phone number.
+- The NSC control room will get in touch with the teams if there is a discrepency between their reported playoffs record and the official record. 
+- Playoff stats and placement round assignments will be posted to the PACE website and to HSQuizbowl Forums around 1 hour after the end of Round 12. 
+- Teams should email Gaurav Kandlikar at tournament.director@pace-nsc.org with any discrepencies in statistics.
+
+## Information for moderators
+- At the end of Round 12, collect the Win-Loss record and a contact number for both teams in your room on the **back of your Round 12 scoresheet**
+- Return the Round 12 scoresheet to your Control Room immediately
+- Leave the buzzer in your room set up - just unplug it for the night!
+- Report to your **Sunday control room by 8AM**.

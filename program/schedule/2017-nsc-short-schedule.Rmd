@@ -1,0 +1,50 @@
+---
+header-includes:
+  \usepackage{tabularx}
+  \usepackage{float}
+  \usepackage{graphicx,colortbl,xcolor}
+output: pdf_document
+geometry: margin=.7in
+---
+  
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+\includegraphics{~/Desktop/PACE2017large.png}
+\begin{center}
+{\huge \textbf{2017 PACE NSC Tournament Schedule}}
+\end{center}
+
+# Tournament Schedule
+
+### Friday, 9 June 2017
+- 6:00 - 9:00 PM: Team Check-in 
+- 7:00 - 9:00 PM: David Riley Coaches Conference (*timing tentative; final time will be announced on hsquizbowl.org*)
+
+### Saturday, 10 June 2017
+
+- 7:00 - 7:45 AM: Team Check-in for teams that arrive Saturday Morning
+- 8:00 - 8:30 AM: Opening meeting (Rosemont Ballroom)
+- 9:00 AM - 1:00 PM: Preliminary Rounds (rounds 1-7)
+- 1:00 - 1:40 PM: Tiebreaker A
+- 1:40 - 3:00 PM: Lunch    
+*Playoff seeds will be posted at ~2:30 PM*
+- 3:00 - 6:00 PM: Playoff rounds (rounds 8-12)
+- 6:00 - 6:30 PM: Tiebreaker B  
+*Superplayoff and placement round seeds will be posted at ~8:00 pm*
+  
+### Sunday, 11 June 2017
+- 8:15 AM: Teams report to Round 13 rooms
+- 8:30 AM - 10:15 AM: Placement rounds (for teams below Tier II and not involved in tier-crossing games)
+- 8:30 AM - 12:00 PM: Superplayoff rounds and Tier-crossing rounds (13-18)
+- 11:00 AM - 12:00 PM: Junior Varsity and Small School finals, as needed
+- 12:00 - 1:30 PM: Lunch    
+*All times below are subject to slight (~15-30 min) changes, depending on the nature of ties that need to be broken*
+- 1:30 PM: Tiebreaker C
+- 2:15 PM: Tournament Finals
+- 3:15 PM: All-Star Game
+- 3:50 PM: Awards Ceremony
+- 4:30 PM: Tournament ends
+
+\clearpage

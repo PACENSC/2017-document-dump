@@ -1,0 +1,112 @@
+---
+geometry: margin=.5in
+header-includes: \usepackage{tabularx} \usepackage{float} \usepackage{graphicx,colortbl,xcolor}
+output: pdf_document
+---
+    
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+bold <- function(x) {return(paste0("\\textbf{",x,"}"))}
+library(stringr)
+library(tidyr)
+library(knitr); library(kableExtra)
+linesep = c("", "","", "", "\\addlinespace")
+```
+  
+
+```{r echo = F, results="asis"}
+assignments <- read.csv("~/nongrad/quizbowl/2017-pacensc/program/schedule/2017-nsc-staff-assignments.csv", stringsAsFactors = F)
+# assignments
+
+saturday <- assignments %>% select(name = saturday.reader, "Saturday room" = room, "Control room" = control.room)
+saturday <- rbind(saturday, assignments %>% select(name = saturday.scorekeeper, "Control room" = control.room, "Saturday room" = room) %>% filter(name != "-"))
+# saturday$role <- c(rep("Mod 1", 48), rep("Mod 2", 40))
+#, "Prelims bracket" = prelim_bracket, "Playoffs bracket" = playoff_bracket
+saturday <- extract(saturday, name, c("First Name", "Last Name"), "([^ ]+) (.*)")
+
+saturday <- saturday %>% arrange(`Last Name`)
+# saturday <- saturday %>% select(`Last Name`, `First Name`, Room:`Playoffs bracket`)
+saturday <- saturday %>% select(`Last Name`, `First Name`, `Saturday room`)
+
+saturday_to_print <- saturday[1:45, ]
+saturday_to_print <- cbind(saturday_to_print, saturday[46:90, ])
+
+```
+
+### PACE NSC Staff Directory - Saturday, 10 June 2017
+
+```{r results = 'asis', echo=F}
+kk <- kable(saturday_to_print, format = "latex", booktabs = T, align = "lll|lll", linesep = c("", "", "", "\\addlinespace")) 
+
+kk %>% kable_styling(latex_options = c("striped"), font_size = 8)#%>% column_spec(1, bold =TRUE)
+
+```
+```{r, echo = F, results = 'asis'}
+
+control <- read.csv("~/nongrad/quizbowl/2017-pacensc/program/schedule/2017-nsc-control-staff.csv")
+kable(control, "latex", booktabs = T) %>% kable_styling(latex_options = c("striped"), font_size = 9)#%>% column_spec(1, bold =TRUE)
+```
+\clearpage
+
+### PACE NSC Room Directory - Saturday, 10 June 2017
+
+```{r echo = F, results = 'asis'}
+assignments <- assignments %>% select("Room" = room, "Prelim Bracket" = prelim_bracket, "Playoff Bracket" = playoff_bracket, "Saturday Reader" = saturday.reader, "Saturday Scorekeeper" = saturday.scorekeeper, "Control Room" = control.room)# %>% arrange(desc(`Control Room`))
+kable(assignments, format = "latex", booktabs = T, linesep = c("", "", "", "\\addlinespace")) %>% kable_styling(latex_options = c("striped"), font_size = 8)
+
+```
+
+\* \footnotesize{\textbf{Room LaGuardia}: Report to Midway-GSK during Saturday Morning (Prelim) rounds and all Sunday rounds; report to Aaron Rosenberg in 2640 during Saturday Afternoon (Playoff) rounds}  
+\*\* \footnotesize{\textbf{All rooms reporting to Control Room 1069}: Please note that this control room will be set up in the \textbf{bedroom} portion of the suite during the Saturday Afternoon (Playoff) phase and that there will be a game going on in the suite. Please wait outside 1069 until the game inside is finished.}  
+\*\*\* \footnotesize{\textbf{The readers in Heathrow A} are to switch into Room 1011 during the Saturday Afternoon (Playoff) phase, and back into Heathrow A on Sunday morning} 
+
+
+\#  \footnotesize{Mod1/Mod2 switch off reading and scorekeeping}  
+
+\clearpage 
+
+```{r echo = F, results="asis"}
+assignments <- read.csv("~/nongrad/quizbowl/2017-pacensc/program/schedule/2017-nsc-staff-assignments.csv", stringsAsFactors = F)
+# assignments
+
+sunday <- assignments %>% select(name = sunday.reader, "Sunday room" = room, "Control room" = control.room)
+sunday <- rbind(sunday, assignments %>% select(name = sunday.scorekeeper, "Control room" = control.room, "Sunday room" = room) %>% filter(name != "-"))
+# sunday$role <- c(rep("Mod 1", 48), rep("Mod 2", 40))
+#, "Prelims bracket" = prelim_bracket, "Playoffs bracket" = playoff_bracket
+sunday <- extract(sunday, name, c("First Name", "Last Name"), "([^ ]+) (.*)")
+
+sunday <- sunday %>% arrange(`Last Name`)
+# sunday <- sunday %>% select(`Last Name`, `First Name`, Room:`Playoffs bracket`)
+sunday <- sunday %>% select(`Last Name`, `First Name`, `Sunday room`)
+
+sunday_to_print <- sunday[1:45, ]
+sunday_to_print <- cbind(sunday_to_print, sunday[46:90, ])
+
+```
+
+### PACE NSC Staff Directory - Sunday, 11 June 2017
+
+```{r results = 'asis', echo=F}
+kk <- kable(sunday_to_print, format = "latex", booktabs = T, align = "lll|lll") 
+
+kk %>% kable_styling(latex_options = c("striped"), font_size = 9)#%>% column_spec(1, bold =TRUE)
+
+kable(control, "latex", booktabs = T) %>% kable_styling(latex_options = c("striped"), font_size = 8)#%>% column_spec(1, bold =TRUE)
+
+```
+
+\clearpage
+
+### PACE NSC Room Directory - Sunday, 11 June 2017
+
+```{r echo = F, results = 'asis'}
+assignments <- assignments %>% select("Room" = room,  "Superplayoff Bracket" = superplayoff_bracket, "Sunday Reader" = sunday.reader, "Sunday Scorekeeper" = sunday.scorekeeper, "Control Room" = control.room)# %>% arrange(desc(`Control Room`))
+kable(assignments, format = "latex", booktabs = T, linesep = c("", "", "", "\\addlinespace")) %>% kable_styling(latex_options = c("striped"), font_size = 9)
+
+```
+\*/\*\*/\*\*\* \footnotesize{These comments only apply to the Saturday staffing grid.}
+
+\footnotesize{\textbf{If you were a bracket captain on Saturday and are reading for a 29th-96th place games on Sunday}, please report to the main control room in Midway after you finish Round 15 duties - don't take down your buzzers yet. You may be asked to read for tiebreaker games.}
+
+\#   \footnotesize{Mod1/Mod2 switch off reading and scorekeeping}  

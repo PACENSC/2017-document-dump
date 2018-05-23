@@ -1,0 +1,112 @@
+---
+geometry: margin=1in
+header-includes: \usepackage{tabularx} \usepackage{float} \usepackage{graphicx,colortbl,xcolor}
+output:
+  pdf_document: default
+---
+
+\includegraphics{~/Desktop/PACE2017large.png}
+\begin{center}
+{\huge \textbf{Abridged tournament program}}
+\end{center}
+
+\bigskip
+\bigskip
+
+\begin{center}
+\large{In an effort to reduce paper use at the NSC, we have moved parts of the NSC program online. A complete version of the complete 2017 PACE NSC Program, including a team directory, game schedule, maps to nearby restaurants, and more links to PACE Social Media is available at http://pacensc.github.io or by scanning the following QR code:}
+
+\includegraphics[height=5cm]{/home/gsk/nongrad/quizbowl/2017-pacensc/qrcode.png}
+\end{center}
+
+\setcounter{tocdepth}{2}
+\tableofcontents{}
+
+
+\clearpage
+
+## Message from the PACE President
+Welcome to the 20th Annual PACE National Scholastic Championship and the 3rd Annual David Riley Coaches Conference! It is a pleasure and an honor to host such a great collection of teams from all over the country and to some extent all over the world. Whether this is your school’s first time participating or it has been here many times before, we are happy to have you. A special tip of the hat goes to Detroit Catholic Central, which has been here all twenty years!
+
+There are so many different people who are essential to make a tournament like this happen and make an organization like PACE work, and I am grateful for their many contributions. Michael Bentley and Fred Morlan deserve high praise for improving PACE many times over the years, especially recently. Tournament Director Gaurav Kandlikar, Set Editor Rob Carson, and Event Manager Bernadette Spencer merit special mention for making this year’s tournament work. Many
+people deserve credit for PACE and the NSC being able to serve high school teams well.
+
+The [David Riley Coaches Conference](http://www.pace-nsc.org/david-riley-coaches-conference/) takes place Friday night. We hope you will join us for a wide-ranging discussion of quizbowl. We will talk both about how you can compete better and about how we together can make quizbowl better.
+
+Speaking of how we together can make quizbowl better, PACE is a registered 501(c)(3) non-profit which sponsors a variety of programs throughout the year in order to advance our mission of promoting high¬quality high school quizbowl. I’d like to highlight two such programs in particular:
+- The [PACE Outreach Fund](http://www.pace-nsc.org/pace-outreach-fund-2016-17/) – This is a grant that individuals and quizbowl organizations can apply for to help recruit new teams to a circuit or to start a circuit.
+- The [Morgan Costa-Rhodes Memorial Scholarship](http://www.pace-nsc.org/2017-morgan-costa-rhodes-memorial-scholarship-winner/) – This is a scholarship to help students who are starting college who demonstrate dedication to quizbowl, community service, and financial need.
+
+More details on each of these programs can be found at our website, [www.pace-nsc.org](http://www.pace-nsc.org). Our website also contains Quizbowl 101, which is a video and collection of articles about quizbowl. You can also find us on Facebook, Twitter, LinkedIn, and YouTube. The Morgan Costa-Rhodes Memorial Scholarship just started this year, and we are happy to announce that **Casey Wetherbee of Ithaca** is the first recipient.
+
+If you are a graduating senior passionate about high school quizbowl or know someone who is, please let us know. We will be making an open call for new members within the next couple of weeks. You can also email me personally at president@pace-nsc.org.
+
+Once again, thank you so much for attending this year’s NSC. I hope you all have a great tournament, and I hope to see you all again next year in Reston, Virginia.
+
+Sincerely,  
+David Reinstein   
+![](/home/gsk/nongrad/quizbowl/2017-pacensc/nsc-website/images/ReinsteinPicture.jpg)
+
+\clearpage 
+
+## 2016-17 Cooper Awards
+
+
+The [Benjamin Cooper Academic Ambassador Award](http://www.pace-nsc.org/2017-cooper-award-winners/) is an annual award presented by PACE to recognize “a high school academic competition team member, advisor, or organization whose character best promotes the spirit and honor of quiz bowl competition”. The original Cooper Award was named in honor of Benjamin Cooper, a student at Georgetown Day School who had been named captain of his team prior to his untimely death on August 12, 1997, and has been awarded at every NSC since PACE’s foundation. In 2004, PACE added the Benjamin Cooper Young Ambassador Award, which specifically recognizes the contributions of persons under the age of 25. Many winners of the “Young Cooper” award are high school or college students at the time they are recognized. 
+
+This year, PACE would like to recognize the following individuals for their work on expanding and improving high school quizbowl at the local and national levels.
+
+The winner of the 2017 Benjamin Cooper Academic Ambassador Award is **Fred Morlan**. We recognize his work on [HSQB Rank](https://hsqbrank.com/), assisting coaches and tournament directors in West Virginia and Kentucky, and spreading better quizbowl practices nationwide.
+
+The winner of the 2017 Benjamin Cooper Young Ambassador Award is **Jackie Wu** of Downingtown High School East in Pennsylvania. We recognize her work to convert her school and others in her region to pyramidal quizbowl, including hosting multiple tournaments.
+
+Congratulations to Fred and Jackie! We at PACE thank you for all your hard work building the high school quizbowl circuit.
+
+\clearpage
+
+## Game format summary
+
+**Tossups:**  
+Powers at the PACE NSC are worth 20 points. The portion of the tossup that is worth 20 points is in bold. Power ends at the (*) in the written question. A correct answer during the remainder of the tossup is worth 10 points. A player must begin giving an answer within 5 seconds of buzzing in. If no one has answered a tossup correctly within 5 seconds of its completion, the tossup goes dead and the next tossup is read. There are no point deductions for incorrect interrupts. However, if a team incorrectly interrupts a tossup, that team is locked out of answering that tossup. A scorecheck should be performed after 10 tossups. Teams also have the opportunity to make substitutions at this time.
+
+**Bonuses:**  
+After a team correctly answers a tossup, that team is awarded a bonus. Bonuses will be read in order; bonus number does not correspond to tossup number. The controlling team w illbe prompted for an answer to each bonus part after 4 seconds. If the controlling team answers a bonus part incorrectly, the other team has the opportunity to "steal" that part. This is called a bounceback. The rebounding team will be prompted for an answer after one second. Bouncebacks occur after each part, not the entire bonus. The controlling team always has the first opportunity to answer each part. 
+
+**If the game is tied after tossup 20:**  
+The moderator will read an additional (sudden death) tossup. If someone gives a correct answer to that tossup, the appropriate number of points is added to their team's score and the game ends. If nobody answers tossup 21, the moderator will get additional tossups from the control room to be read in sudden death fashion until one team answers a tossup correctly.
+
+## Full PACE NSC rules
+
+For a copy of the full NSC gameplay rules, visit http://pacensc.github.io/rules, or scan the following QR code:
+
+\begin{center}
+\includegraphics[height=5cm]{/home/gsk/nongrad/quizbowl/2017-pacensc/rules-qrcode.png}
+\end{center}
+
+
+## Social Media at the NSC
+Share your experience on social media with the hashtag #PACENSC. With the exception of the finals, no question content may be posted on social media out of concerns for question security between concurrent game rooms.
+
+A liveblog on our Twitter account @PACENSC will follow select games over the course of the tournament. A livestream on our YouTube channel will broadcast the Cooper Awards ceremony at the opening meeting, select superplayoff games (on a delay), the tournament finals, the all-star game, and the awards ceremony. 
+
+
+\clearpage
+
+## Hotel map
+
+**Entry Level**
+
+\includegraphics[height=10cm]{/home/gsk/nongrad/quizbowl/2017-pacensc/nsc-website/images/hyatt-entry-level.png}
+
+**Lobby Level**
+
+\includegraphics[height=10cm]{/home/gsk/nongrad/quizbowl/2017-pacensc/nsc-website/images/hyatt-lobby-level.png}
+
+**International Level**
+
+\includegraphics[height=10cm]{/home/gsk/nongrad/quizbowl/2017-pacensc/nsc-website/images/hyatt-international-level.png}{}
+
+
+
+
+

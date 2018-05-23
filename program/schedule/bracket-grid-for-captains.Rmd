@@ -1,0 +1,54 @@
+---
+geometry: margin=.5in
+header-includes: \usepackage{tabularx} \usepackage{float} \usepackage{graphicx,colortbl,xcolor}
+output: pdf_document
+---
+
+
+  
+```{r, echo=F, results='asis', out.height=30}
+
+ss <- read.csv("~/nongrad/quizbowl/2017-pacensc/program/schedule/2017-pace-nsc-seeds-fri-morn.csv")
+library(magrittr); library(xtable)
+
+make_bracket_doc <- function(which_bracket){
+  to_print <- (paste0("\n\n## Record tracking sheet for bracket ", colnames(ss)[which_bracket],"\n\n"))
+  cat(paste("\\includegraphics{~/Desktop/PACE2017med.png} \n"))
+  cat(to_print)
+
+  mm <- ss[,which_bracket]
+  mmm <- matrix("    \n\n", nrow = 8, ncol = 8)
+  # mm
+  rownames(mmm) <- sort(mm)
+  colnames(mmm) <- c(paste("Round", 1:7), "Final Record")
+  
+  xbracket <- xtable(mmm )
+  align(xbracket) <- "|c|X|X|X|X|X|X|X||X|"
+  print(xbracket, type = 'latex', include.colnames = T, comment=F, tabular.environment = "tabularx", width = "\\textwidth" , hline.after = -1:8)
+  
+  cat("### After round 7\n\n")
+  cat("After you finish Round 7, return to your control room immediately (don't wait for the other rooms in your bracket to finish). You will confirm team records and ranking within bracket. Your Control Room captain will let you know whether any teams in your bracket need to play tiebreaker games to determine seeding for the playoff stage. You will take this information back to the teams, dismiss any teams that are not involved in any tiebreakers, and run tiebreakers as needed.\n\n")
+  
+  cat("### Bracket standings:\n\n")
+  
+  cat("1. \n\n 2. \n\n 3. \n\n 4. \n\n 5. \n\n 6. \n\n 7.\n\n 8.\n\n")
+  cat("#### How we determine whether tiebreakers are required\n\n")
+  cat("*You may use the following explanation if teams ask how their prelim ties were resolved:* \n\n\n")
+  cat("After the preliminary rounds, if there is a two-way tie that does not affect what tier the teams will advance to (e.g. two-way tie for 5th, both teams will advance to Tier III), the tie will be broken on PPG. Otherwise, teams will play Minimatches.")
+  cat("\\clearpage")
+}
+
+invisible(sapply(1:12, make_bracket_doc))
+
+```
+
+
+
+
+
+
+
+
+
+
+

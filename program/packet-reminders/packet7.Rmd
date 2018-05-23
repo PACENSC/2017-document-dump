@@ -1,0 +1,31 @@
+---
+geometry: margin=.4in
+header-includes: \usepackage{tabularx} \usepackage{float} \usepackage{graphicx,colortbl,xcolor} \usepackage{mathptmx}
+output: pdf_document
+---
+    
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+bold <- function(x) {return(paste0("\\textbf{",x,"}"))}
+library(stringr)
+library(tidyr)
+library(knitr)# ; library(kableExtra)
+```
+
+\begin{center}
+{\huge \textbf{Packet 7 Reminders}}
+\end{center}
+
+## Information for teams (read these out to the teams)
+- Round 7 is the final round of Saturday morning's prelim phase. 
+- Send one representative (and one representative only) to your bracket's Bracket Captain (listed under your bracket's prelim schedule)
+- Bracket captains will notify the teams whether they are involved in a tiebreaker to determine their playoff bracket or if they are dismissed for lunch. **All tiebreakers to determine playoff seeds will take place before lunch**
+- Playoff assignments will be available at the PACE website, HSQuizbowl Forums, and in the Hyatt Regency lobby by 2:30 PM; teams are expected to be in their Round 8 room by 2:50 PM.
+
+## Information for moderators
+- Note that you may be asked by your bracket captain or control room to read for tiebreaker games for teams in your bracket if needed.
+- **If you are a solo reader**: take your scoresheet from Round 7 immediately to your control room; then wait outside your bracket captain's room. 
+- **If your room has a reader and a scorekeeper**, send the scorekeeper immediately to your control room; the reader should wait outside the bracket captain's room
+- After you are done reading tiebreakers (or confirm with your bracket captain that you are not needed for tiebreakers), you are welcome to head to lunch (for nearby lunch options, visit http://pacensc.github.io/hotel-map)
+- Return to your **playoff control room** by 2.30 pm to pick up the Round 8 packet.
